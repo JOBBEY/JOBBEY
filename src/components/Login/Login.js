@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { StyleSheet, View, Image, Text } from 'react-native'
 import LoginForm from './LoginForm'
+import styles from './Styled'
 
 export default class Login extends Component{
     render(){
@@ -23,20 +24,3 @@ export default class Login extends Component{
         )
     }
 }
-
-const styles = StyleSheet.create({
-    container:{
-        flex: 1,
-        backgroundColor: '#00b894'
-    },
-    logoContainer:{
-        alignItems: 'center',
-        flexGrow: 1,
-        justifyContent: 'center'
-    },
-    title:{
-        color: '#000',
-        marginTop : 10,
-        opacity: 0.6
-    }
-})

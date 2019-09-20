@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
-import { StyleSheet, View, TextInput, TouchableOpacity, Text } from 'react-native'
+import { View, TextInput, TouchableOpacity, Text } from 'react-native'
 
 export default class LoginForm extends Component{
+    nextScreen = () => {
+        console.log("pressed")
+    }
     render(){
         return(
-            <View style={styles.container}>
+            <View style={styles.containerForm}>
                 <TextInput
                     style={styles.input}
                     placeholder='Usuario o email'
@@ -21,31 +24,10 @@ export default class LoginForm extends Component{
                     returnKeyType='go'
                     ref={(input) => this.passwordInput = input}
                 />
-                <TouchableOpacity style={styles.buttonContainer}>
+                <TouchableOpacity style={styles.buttonContainer} onPress={this.nextScreen}>
                     <Text style={styles.buttonText}>Ingresar</Text>
                 </TouchableOpacity>
             </View>
         )
     }
 }
-
-const styles = StyleSheet.create({
-    container: {
-        padding: 20
-    },
-    input:{
-        height: 40,
-        backgroundColor: 'rgba(255, 255, 255, 0.2)',
-        marginBottom: 20,
-        paddingHorizontal: 10
-    },
-    buttonContainer:{
-        backgroundColor: '#2d3436',
-        paddingVertical: 15
-    },
-    buttonText:{
-        textAlign: 'center',
-        color: '#dfe6e9',
-        fontWeight: '700'
-    }
-});
