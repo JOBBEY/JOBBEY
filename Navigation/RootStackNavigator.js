@@ -3,6 +3,7 @@ import NavigationService from './NavigationService'
 import React, { Component } from 'react';
 import Login from '../src/Screens/Login/Login';
 import SelectRol from '../src/Screens/SelectRol/SelectRol';
+import Categories from '../src/Screens/Categories/Categories'
 const routeConfig = {
     Login: {
         screen: Login,
@@ -11,6 +12,10 @@ const routeConfig = {
     SelectRol:{
         screen: SelectRol,
         path: "SelectRol"
+    },
+    Categories:{
+        screen: Categories,
+        path: "Categories"
     }
 };
 const navigatorConfig = {

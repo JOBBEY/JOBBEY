@@ -1,8 +1,12 @@
 import React, { Component } from 'react'
 import { View, Image, Text, TouchableOpacity } from 'react-native'
+import NavigationService from '../../../Navigation/NavigationService'
 import styles from './Styled'
 
 export default class SelectRoll extends Component {
+    nextScreen = () => {
+        NavigationService.navigate("Categories");
+    }
     render() {
         return (
             <View style={styles.container}>
@@ -21,7 +25,10 @@ export default class SelectRoll extends Component {
                         </Text>
                     </TouchableOpacity>
                 <View/>
-                <TouchableOpacity style={styles.buttonContainer3}>
+                <TouchableOpacity
+                    style={styles.buttonContainer3}
+                    onPress={this.nextScreen}
+                    >
                     <Image
                         source={require('../../assets/support.png')}
                     />
