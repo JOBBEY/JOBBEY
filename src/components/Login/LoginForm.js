@@ -3,7 +3,7 @@ import { View, TextInput, TouchableOpacity, Text } from 'react-native'
 
 export default class LoginForm extends Component{
     nextScreen = () => {
-        console.log("pressed")
+        NavigationService.navigate("SelectRol");
     }
     render(){
         return(
