@@ -5,6 +5,10 @@ export default styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#00b16A'
     },
+    container2: {
+        flex: 1,
+        backgroundColor: '#00b16A'
+    },
     logoContainer: {
         alignItems: 'center',
         flexGrow: 1,
@@ -33,5 +37,31 @@ export default styles = StyleSheet.create({
         textAlign: 'center',
         color: '#f7f7f8',
         fontWeight: '700'
-    }
+    },
+    buttonText2: {
+        textAlign: 'center',
+        color: '#f7f7f8',
+        fontWeight: '700',
+        marginTop: 100,
+        fontSize: 30
+    },
+    buttonContainer2: {
+        backgroundColor: '#28323A',
+        paddingVertical: 15,
+        marginVertical: 50,
+        marginHorizontal: 90,
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 10,
+    },
+    buttonContainer3: {
+        backgroundColor: '#28323A',
+        paddingVertical: 15,
+        marginHorizontal: 90,
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 10,
+        marginTop: 50,
+        marginBottom: 220
+    },
 })
