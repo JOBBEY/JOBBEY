@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import Login from '../src/Screens/Login/Login';
 import SelectRol from '../src/Screens/SelectRol/SelectRol';
 import Categories from '../src/Screens/Categories/Categories'
+import Rate from '../src/Screens/Rate/Rate'
 const routeConfig = {
     Login: {
         screen: Login,
@@ -16,6 +17,10 @@ const routeConfig = {
     Categories:{
         screen: Categories,
         path: "Categories"
+    },
+    Rate:{
+        screen: Rate,
+        path: "Rate"
     }
 };
 const navigatorConfig = {

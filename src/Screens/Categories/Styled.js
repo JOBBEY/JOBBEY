@@ -1,7 +1,5 @@
 import { StyleSheet } from 'react-native'
 
-const { width, height } = require('Dimensions').get('window');
-
 export default styles = StyleSheet.create({
     container: {
         flex: 1,
