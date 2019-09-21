@@ -1,42 +1,38 @@
 import { StyleSheet } from 'react-native'
 
+const { width, height } = require('Dimensions').get('window');
+
 export default styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#00b16A'
+        backgroundColor: '#00b16A',
     },
-    container2: {
+    columns: {
+        flexDirection: 'row'
+    },
+    containerLeft: {
         flex: 1,
-        backgroundColor: '#00b16A'
+        backgroundColor: '#00b16A',
+        alignItems: 'flex-start',
+        flexDirection: 'column'
     },
-    logoContainer: {
-        alignItems: 'center',
-        flexGrow: 1,
-        justifyContent: 'center'
+    containerRigth: {
+        flex: 1,
+        backgroundColor: '#00b16A',
+        alignItems: 'flex-end',
+        flexDirection: 'column'
     },
-    title: {
-        color: '#28323A',
-        marginTop: 10,
-        opacity: 0.6
-    },
-    containerForm: {
-        padding: 20
-    },
-    input: {
-        height: 40,
-        backgroundColor: 'rgba(255, 255, 255, 0.1)',
-        marginBottom: 20,
-        paddingHorizontal: 10,
-        color: '#28323A'
-    },
-    buttonContainer: {
+    buttonContainer2: {
         backgroundColor: '#28323A',
-        paddingVertical: 15
-    },
-    buttonText: {
-        textAlign: 'center',
-        color: '#f7f7f8',
-        fontWeight: '700'
+        paddingVertical: 30,
+        paddingHorizontal: 15,
+        //marginVertical: 30,
+        marginHorizontal: 50,
+        marginTop: 30,
+        marginBottom: 10,
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 10,
     },
     buttonText2: {
         textAlign: 'center',
@@ -45,23 +41,17 @@ export default styles = StyleSheet.create({
         marginTop: 100,
         fontSize: 30
     },
-    buttonContainer2: {
-        backgroundColor: '#28323A',
-        paddingVertical: 15,
-        marginVertical: 50,
-        marginHorizontal: 90,
-        justifyContent: 'center',
-        alignItems: 'center',
-        borderRadius: 10,
+    buttonText: {
+        textAlign: 'center',
+        color: '#f7f7f8',
+        fontWeight: '700',
+        justifyContent: 'center'
     },
-    buttonContainer3: {
+    buttonContainer: {
         backgroundColor: '#28323A',
         paddingVertical: 15,
-        marginHorizontal: 90,
-        justifyContent: 'center',
-        alignItems: 'center',
-        borderRadius: 10,
-        marginTop: 50,
-        marginBottom: 220
+        marginTop: 70,
+        marginHorizontal: 50,
+        borderRadius: 10
     },
 })

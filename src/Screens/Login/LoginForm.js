@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { View, TextInput, TouchableOpacity, Text } from 'react-native'
 import NavigationService from '../../../Navigation/NavigationService'
+import styles from './Styled'
 
 export default class LoginForm extends Component{
     nextScreen = () => {

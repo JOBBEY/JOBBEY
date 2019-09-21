@@ -19,7 +19,7 @@ const routeConfig = {
     }
 };
 const navigatorConfig = {
-    initialRouteName: 'Login',
+    initialRouteName: 'Categories',
     header: null,
     headerMode: "none",
     statusBarStyle: "light-content"
