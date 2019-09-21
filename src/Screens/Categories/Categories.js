@@ -1,9 +1,13 @@
 import React, { Component } from 'react'
 import { View, Text, TouchableOpacity, Image } from 'react-native'
+import NavigationService from '../../../Navigation/NavigationService'
 import styles from './Styled'
 import IconButton from './IconButton'
 
 export default class Categories extends Component {
+    nextScreen = () => {
+        NavigationService.navigate("Rate");
+    }
     render() {
         return (
             <View style={styles.container}>
@@ -37,7 +41,9 @@ export default class Categories extends Component {
                             pngImage={require('../../assets/cleaning.png')} />
                     </View>
                 </View>
-                <TouchableOpacity style={styles.buttonContainer} onPress={this.nextScreen}>
+                <TouchableOpacity
+                    style={styles.buttonContainer}
+                    onPress={this.nextScreen}>
                     <Text style={styles.buttonText}>Categoría no listada</Text>
                 </TouchableOpacity>
             </View>
