@@ -5,7 +5,7 @@ import styles from './Styled'
 
 export default class SelectRoll extends Component {
     nextScreen = () => {
-        NavigationService.navigate("Categories");
+        NavigationService.navigate("UserProfile");
     }
     render() {
         return (
