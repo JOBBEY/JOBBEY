@@ -6,6 +6,7 @@ import SelectRol from '../src/Screens/SelectRol/SelectRol';
 import Categories from '../src/Screens/Categories/Categories';
 import Rate from '../src/Screens/Rate/Rate';
 import UserProfile from '../src/Screens/UserProfile/UserProfile'
+import JobbeyProfile from '../src/Screens/JobbeyProfile/JobbeyProfile'
 
 const routeConfig = {
     Login: {
@@ -23,6 +24,10 @@ const routeConfig = {
     UserProfile:{
         screen: UserProfile,
         path: "UserProfile"
+    },
+    JobbeyProfile:{
+        screen: JobbeyProfile,
+        path: "JobbeyProfile"
     },
     Rate:{
         screen: Rate,

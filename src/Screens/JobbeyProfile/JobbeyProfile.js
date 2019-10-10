@@ -36,8 +36,11 @@ export default class UserProfile extends Component{
                   <Text style={styles.info}>Calificación 4.99</Text>
                   <Text style={styles.description}>Lorem ipsum dolor sit amet, saepe sapientem eu nam. Qui ne assum electram expetendis, omittam deseruisse consequuntur ius an,</Text>
                            
-                  <TouchableOpacity style={styles.buttonContainer} onPress={this.nextScreen}>
-                    <Text>Buscar ayuda</Text> 
+                  <TouchableOpacity 
+                    style={styles.buttonContainer} 
+                    //onPress={this.nextScreen}
+                    >
+                    <Text>Ayudar a alguien</Text> 
                   </TouchableOpacity>
                 </View>
             </View>
