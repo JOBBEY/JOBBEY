@@ -8,8 +8,8 @@ const Request = (props) => {
   
   return (
     <View style={styles.BodyRequest}>
+      <NavigationBar />
       <ScrollView>
-        <NavigationBar />
         <Card style={{padding: 10, margin: 10}}>
           <Text>Open up App.js to start working on your app!</Text>
           <Text>Changes you make will automatically reload.</Text>
