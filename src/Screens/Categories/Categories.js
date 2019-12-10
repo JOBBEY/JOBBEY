@@ -11,9 +11,9 @@ export default class Categories extends Component {
     }
     render() {
         return (
-            <ScrollView style={styles.container}>
-                <View style={styles.container}>
-                    <NavigationBar />
+            <View style={styles.container}>
+                <NavigationBar />
+                <ScrollView >
                     <Text
                         style={styles.buttonText2}>
                             ¿En qué categoría se encuentra tu solicitud?
@@ -49,8 +49,8 @@ export default class Categories extends Component {
                         onPress={this.nextScreen}>
                         <Text style={styles.buttonText}>Categoría no listada</Text>
                     </TouchableOpacity>
-                </View>
-            </ScrollView>
+                </ScrollView>
+            </View>
         )
     }
 }

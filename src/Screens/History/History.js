@@ -8,8 +8,8 @@ const History = (props) => {
   
   return (
     <View style={styles.BodyHistory}>
+      <NavigationBar />
       <ScrollView>
-        <NavigationBar />
         <HistoryCard
           title='Computación'
           price='60.000'

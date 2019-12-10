@@ -21,8 +21,8 @@ export default class UserProfile extends Component{
     render() {
         return (
           <View>
+            <NavigationBar/>
             <ScrollView>
-              <NavigationBar/>
               <View style={styles.container}>
                 <View style={styles.header}></View>
                   <Image style={styles.avatar} source={{uri: 'https://bootdey.com/img/Content/avatar/avatar6.png'}}/>

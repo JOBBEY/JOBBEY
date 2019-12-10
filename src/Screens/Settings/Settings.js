@@ -8,8 +8,8 @@ const Settings = (props) => {
   const ICON_SIZE = 30;
   return (
     <View style={styles.BodySettings}>
+      <NavigationBar />
       <ScrollView>
-        <NavigationBar />
         <Text>Ajustes</Text>
       </ScrollView>
     </View>

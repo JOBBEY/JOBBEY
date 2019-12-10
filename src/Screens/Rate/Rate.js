@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { View, Text, Image, ScrollView } from 'react-native'
 import { Rating, AirbnbRating } from 'react-native-ratings';
 import styles from './Styled'
+import NavigationBar from '../NavBar/NavBarUser';
 
 
 export default class Rate extends Component {
@@ -21,6 +22,7 @@ export default class Rate extends Component {
     render() {
         return (
             <View style={styles.container}>
+                <NavigationBar />
                 <ScrollView>
                     <Text
                         style={styles.buttonText2}>
