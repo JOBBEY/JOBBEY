@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, View, ScrollView } from 'react-native';
-import NavigationBar from '../NavBar/NavBarJobbey';
+import NavigationBar from '../NavBar/NavBarUser';
 import styles from './Styled';
 
 const Settings = (props) => {
@@ -10,7 +10,7 @@ const Settings = (props) => {
     <View style={styles.BodySettings}>
       <NavigationBar />
       <ScrollView>
-        <Text>Ajustes</Text>
+        <Text>Ajustes usuario</Text>
       </ScrollView>
     </View>
   )

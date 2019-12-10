@@ -15,7 +15,7 @@ const Menu = (props) => {
     NavigationService.navigate("HistoryJobbey");
   }
   nextScreenSettings =() => {
-    NavigationService.navigate("Settings");
+    NavigationService.navigate("SettingsJobbey");
   }
   const ICON_SIZE = 30;
   const ICON_COLOR = 'white';
