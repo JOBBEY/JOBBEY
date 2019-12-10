@@ -5,8 +5,11 @@ import Login from '../src/Screens/Login/Login';
 import SelectRol from '../src/Screens/SelectRol/SelectRol';
 import Categories from '../src/Screens/Categories/Categories';
 import Rate from '../src/Screens/Rate/Rate';
-import UserProfile from '../src/Screens/UserProfile/UserProfile'
-import JobbeyProfile from '../src/Screens/JobbeyProfile/JobbeyProfile'
+import UserProfile from '../src/Screens/UserProfile/UserProfile';
+import JobbeyProfile from '../src/Screens/JobbeyProfile/JobbeyProfile';
+import Request from '../src/Screens/Request/Request';
+import History from '../src/Screens/History/History';
+import Settings from '../src/Screens/Settings/Settings';
 
 const routeConfig = {
     Login: {
@@ -32,7 +35,19 @@ const routeConfig = {
     Rate:{
         screen: Rate,
         path: "Rate"
-    }
+    },
+    Request:{
+        screen: Request,
+        path: "Request"
+    },
+    History:{
+        screen: History,
+        path: "History"
+    },
+    Settings:{
+        screen: Settings,
+        path: "Settings"
+    },
 };
 const navigatorConfig = {
     initialRouteName: 'Login',
