@@ -9,7 +9,7 @@ export default class RequestCard extends Component {
         return <Text style={styles.NameText} key={i}>{task}</Text>;
     });
     return (
-      <View style={{height: 400}}>
+      <View>
         <Card style={styles.MainCard}>
           <View style={styles.FlexView}>
             <Card style={styles.ProfileCard}>

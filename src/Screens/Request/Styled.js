@@ -19,7 +19,6 @@ export default styles = StyleSheet.create({
     margin: 10,
     padding: 10,
     flex: 2,
-    height: 'auto',
     alignItems: 'center',
   },
   TaskCard: {
@@ -45,8 +44,8 @@ export default styles = StyleSheet.create({
     borderRadius: 63,
     borderWidth: 4,
     borderColor: '#28323A',
-    width: '100%',
-    height: '57%',
+    width: "80%",
+    height: 200,
   },
   NameText: {
     color: '#28323A',
@@ -63,7 +62,7 @@ export default styles = StyleSheet.create({
   },
   PriceTitle: {
     color: '#00b16a',
-    fontSize: 29,
+    fontSize: 22,
     fontWeight: '700',
   },
   OtherTitles1: {
