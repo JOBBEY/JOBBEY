@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import NavigationService from '../../../Navigation/NavigationService'
 import { Avatar } from "react-native-elements";
 import NavigationBar from '../NavBar/NavBarJobbey';
-import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity, ScrollView } from 'react-native';
 
 <Avatar
   size="xlarge"
@@ -21,25 +21,27 @@ export default class UserProfile extends Component{
     render() {
         return (
           <View>
-          <NavigationBar/>
-          <View style={styles.container}>
-              <View style={styles.header}></View>
-              <Image style={styles.avatar} source={{uri: 'https://bootdey.com/img/Content/avatar/avatar6.png'}}/>
-              <View style={styles.body}>
-                <View style={styles.bodyContent}>
-                  <Text style={styles.name}>John Doe</Text>
-                  <Text style={styles.info}>Calificación 4.99</Text>
-                  <Text style={styles.description}>Lorem ipsum dolor sit amet, saepe sapientem eu nam. Qui ne assum electram expetendis, omittam deseruisse consequuntur ius an,</Text>
-                           
-                  <TouchableOpacity 
-                    style={styles.buttonContainer} 
-                    //onPress={this.nextScreen}
-                    >
-                    <Text>Ayudar a alguien</Text> 
-                  </TouchableOpacity>
+            <ScrollView>
+              <NavigationBar/>
+              <View style={styles.container}>
+                <View style={styles.header}></View>
+                  <Image style={styles.avatar} source={{uri: 'https://bootdey.com/img/Content/avatar/avatar6.png'}}/>
+                  <View style={styles.body}>
+                    <View style={styles.bodyContent}>
+                      <Text style={styles.name}>John Doe</Text>
+                      <Text style={styles.info}>Calificación 4.99</Text>
+                      <Text style={styles.description}>Lorem ipsum dolor sit amet, saepe sapientem eu nam. Qui ne assum electram expetendis, omittam deseruisse consequuntur ius an,</Text>
+                              
+                      <TouchableOpacity 
+                        style={styles.buttonContainer} 
+                        //onPress={this.nextScreen}
+                        >
+                        <Text>Ayudar a alguien</Text> 
+                      </TouchableOpacity>
+                    </View>
                 </View>
-            </View>
-          </View>
+              </View>
+            </ScrollView>
           </View>
         );
       }

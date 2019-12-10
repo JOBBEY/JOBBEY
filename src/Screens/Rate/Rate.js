@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text, Image } from 'react-native'
+import { View, Text, Image, ScrollView } from 'react-native'
 import { Rating, AirbnbRating } from 'react-native-ratings';
 import styles from './Styled'
 
@@ -20,33 +20,34 @@ export default class Rate extends Component {
 
     render() {
         return (
-            <View
-                style={styles.container}>
-                <Text
-                    style={styles.buttonText2}>
-                    Califica a tu Jobbey
-                </Text>
-                <View
-                    style={styles.profile}>
+            <View style={styles.container}>
+                <ScrollView>
                     <Text
                         style={styles.buttonText2}>
-                        Juan Pérez
+                        Califica a tu Jobbey
                     </Text>
-                    <View>
-                        <Image
-                            style={styles.pImage}
-                            source={require('../../assets/avatar.png')}/>
+                    <View
+                        style={styles.profile}>
+                        <Text
+                            style={styles.buttonText2}>
+                            Juan Pérez
+                        </Text>
+                        <View>
+                            <Image
+                                style={styles.pImage}
+                                source={require('../../assets/avatar.png')}/>
+                        </View>
                     </View>
-                </View>
-                <View
-                    style={styles.marco}>
-                    <AirbnbRating 
-                        reviews={['Terrible', 'Malo', 'Meh!', 'Bueno', 'Excelente']}
-                        reviewColor='#F7F7F8'
-                        selectedColor='#F7F7F8'
-                        reviewSize={50}
-                        style={styles.marco}/>
-                </View>
+                    <View
+                        style={styles.marco}>
+                        <AirbnbRating 
+                            reviews={['Terrible', 'Malo', 'Meh!', 'Bueno', 'Excelente']}
+                            reviewColor='#F7F7F8'
+                            selectedColor='#F7F7F8'
+                            reviewSize={50}
+                            style={styles.marco}/>
+                    </View>
+                </ScrollView>
             </View>
         )
     }
