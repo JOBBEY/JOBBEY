@@ -11,27 +11,29 @@ export default styles = StyleSheet.create({
         justifyContent: 'center'
     },
     title: {
-        color: '#28323A',
+        color: '#f7f7f8',
         marginTop: 10,
         opacity: 0.6
     },
     containerForm: {
-        padding: 20
+        padding: 20,
     },
     input: {
         height: 40,
         backgroundColor: 'rgba(255, 255, 255, 0.1)',
         marginBottom: 20,
         paddingHorizontal: 10,
-        color: '#28323A'
+        color: '#28323A',
+        borderRadius: 20,
     },
     buttonContainer: {
         backgroundColor: '#28323A',
-        paddingVertical: 15
+        paddingVertical: 15,
+        borderRadius: 20,
     },
     buttonText: {
         textAlign: 'center',
         color: '#f7f7f8',
-        fontWeight: '700'
+        fontWeight: '700',
     }
 })
