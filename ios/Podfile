@@ -29,6 +29,10 @@ target 'JOBBEY' do
 
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
 
+  pod 'RNFirebase', :path => '../node_modules/react-native-firebase'
+
+  pod 'RNGoogleSignin', :path => '../node_modules/react-native-google-signin'
+
   target 'JOBBEYTests' do
     inherit! :search_paths
     # Pods for testing
