@@ -4,7 +4,7 @@ import {
 } from 'react-native-elements';
 import styles from './Styled'
 
-export default class HitoryComponent extends Component {
+export default class HistoryCard extends Component {
     render() {
         return ( 
             < PricingCard
