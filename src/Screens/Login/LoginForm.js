@@ -13,6 +13,7 @@ export default class LoginForm extends Component{
                 <TextInput
                     style={styles.input}
                     placeholder='Usuario o email'
+                    placeholderTextColor='rgba(255, 255, 255, 0.7)'
                     returnKeyType='next'
                     keyboardType='email-address'
                     autoCapitalize='none'
@@ -22,6 +23,7 @@ export default class LoginForm extends Component{
                 <TextInput
                     style={styles.input}
                     placeholder='Contraseña'
+                    placeholderTextColor='rgba(255, 255, 255, 0.7)'
                     secureTextEntry
                     returnKeyType='go'
                     ref={(input) => this.passwordInput = input}
