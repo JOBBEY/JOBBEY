@@ -1,15 +1,8 @@
 import React, { Component } from 'react'
 import NavigationService from '../../../Navigation/NavigationService'
 import { Avatar } from "react-native-elements";
-import { Button, ThemeProvider } from 'react-native-elements';
-import { Card, ListItem, Icon } from 'react-native-elements'
-import {
-  StyleSheet,
-  Text,
-  View,
-  Image,
-  TouchableOpacity
-} from 'react-native';
+import NavigationBar from '../NavBar/NavBarJobbey';
+import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 
 <Avatar
   size="xlarge"
@@ -27,6 +20,8 @@ export default class UserProfile extends Component{
 
     render() {
         return (
+          <View>
+          <NavigationBar/>
           <View style={styles.container}>
               <View style={styles.header}></View>
               <Image style={styles.avatar} source={{uri: 'https://bootdey.com/img/Content/avatar/avatar6.png'}}/>
@@ -45,38 +40,9 @@ export default class UserProfile extends Component{
                 </View>
             </View>
           </View>
+          </View>
         );
       }
-/*
-    render() {
-        return (
-            <Card
-                title='Bienvenido'>
-                <ThemeProvider>
-                <ListItem
-                    leftAvatar={{
-                        title: "Hey!",
-                        source: { uri:  'https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg' },
-                        showEditButton: true,
-                        size:"xlarge",
-                    }}
-                    title={"Hey11!"}
-                    subtitle={"Hey2222!"}
-                    chevron
-                    size="xlarge"
-                />
-                <Button
-                    icon={<Icon name='code' color='#ffffff' />}
-                    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                    title='Buscar'
-                    onPress={this.nextScreen} />
-            </ThemeProvider>
-            </Card>
-                
-            
-        )
-    }
-*/
 }
 
 const styles = StyleSheet.create({

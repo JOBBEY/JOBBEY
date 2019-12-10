@@ -36,7 +36,7 @@ export default styles = StyleSheet.create({
         textAlign: 'center',
         color: '#f7f7f8',
         fontWeight: '700',
-        marginTop: 100,
+        marginTop: 50,
         fontSize: 30
     },
     buttonText: {

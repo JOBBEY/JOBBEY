@@ -3,6 +3,7 @@ import { View, Text, TouchableOpacity, Image } from 'react-native'
 import NavigationService from '../../../Navigation/NavigationService'
 import styles from './Styled'
 import IconButton from './IconButton'
+import NavigationBar from '../NavBar/NavBarUser';
 
 export default class Categories extends Component {
     nextScreen = () => {
@@ -11,6 +12,7 @@ export default class Categories extends Component {
     render() {
         return (
             <View style={styles.container}>
+                <NavigationBar />
                 <Text
                     style={styles.buttonText2}>
                         ¿En qué categoría se encuentra tu solicitud?
