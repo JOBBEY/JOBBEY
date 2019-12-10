@@ -50,7 +50,7 @@ const routeConfig = {
     },
 };
 const navigatorConfig = {
-    initialRouteName: 'Login',
+    initialRouteName: 'Request',
     header: null,
     headerMode: "none",
     statusBarStyle: "light-content"
