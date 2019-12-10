@@ -14,12 +14,12 @@ const History = (props) => {
           title='Afinación de violin'
           price='70.000'
           info={['Limpieza de cerdas de caballo', 'Afinación de cuerdas']}
-          name='Jorge Camargo' />
+          name='Eduardo Herrera' />
         <HistoryCard
           title='Clases de violín'
           price='40.000'
           info={['¿Cómo leer partituras?', 'Tocar las notas en el violín']}
-          name='Eduardo Herrera' />
+          name='Jorge Camargo' />
       </ScrollView>
     </View>
   )
