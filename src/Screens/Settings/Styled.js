@@ -74,6 +74,17 @@ export default styles = StyleSheet.create({
         paddingVertical: 15,
         width: '70%',
         borderRadius: 15,
+        marginTop: 10,
+    },
+    buttonContainerCard: {
+        backgroundColor: '#28323A',
+        paddingVertical: 15,
+        width: '70%',
+        borderRadius: 15,
+        marginTop: 10,
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'center',
     },
     buttonText: {
         textAlign: 'center',
