@@ -14,10 +14,13 @@ import { StyleSheet, Text, View, Image, TouchableOpacity, ScrollView } from 'rea
 />
 
 export default class UserProfile extends Component{
-    nextScreen = () => {
-        NavigationService.navigate("Categories");
+    nextScreenRequest = () => {
+      NavigationService.navigate("Request");
     }
-
+    nextScreenLogOut = () => {
+      NavigationService.navigate("Login")
+    }
+    
     render() {
         return (
           <View>
@@ -34,7 +37,7 @@ export default class UserProfile extends Component{
                               
                       <TouchableOpacity 
                         style={styles.buttonContainer} 
-                        //onPress={this.nextScreen}
+                        onPress={this.nextScreen}
                         >
                         <Text>Ayudar a alguien</Text> 
                       </TouchableOpacity>

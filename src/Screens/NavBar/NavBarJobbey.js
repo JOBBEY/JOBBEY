@@ -12,7 +12,7 @@ const Menu = (props) => {
     NavigationService.navigate("JobbeyProfile");
   }
   nextScreenHistory =() => {
-    NavigationService.navigate("History");
+    NavigationService.navigate("HistoryJobbey");
   }
   nextScreenSettings =() => {
     NavigationService.navigate("Settings");

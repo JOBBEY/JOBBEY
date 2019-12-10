@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, View, ScrollView } from 'react-native';
-import NavigationBar from '../NavBar/NavBarJobbey';
+import NavigationBar from '../NavBar/NavBarUser';
 import HistoryCard from './HistoryCard'
 import styles from './Styled';
 
@@ -29,7 +29,7 @@ const History = (props) => {
           title='Clases de violín'
           price='40.000'
           info={['¿Cómo leer partituras?', 'Tocar las notas en el violín']}
-          name='Crstian Sanabria' />
+          name='Christian Sanabria' />
       </ScrollView>
     </View>
   )

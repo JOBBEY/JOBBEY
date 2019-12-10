@@ -9,6 +9,7 @@ import UserProfile from '../src/Screens/UserProfile/UserProfile';
 import JobbeyProfile from '../src/Screens/JobbeyProfile/JobbeyProfile';
 import Request from '../src/Screens/Request/Request';
 import History from '../src/Screens/History/History';
+import HistoryJobbey from '../src/Screens/History/HistoryJobbey';
 import Settings from '../src/Screens/Settings/Settings';
 
 const routeConfig = {
@@ -43,6 +44,10 @@ const routeConfig = {
     History:{
         screen: History,
         path: "History"
+    },
+    HistoryJobbey:{
+        screen: HistoryJobbey,
+        path: "HistoryJobbey"
     },
     Settings:{
         screen: Settings,

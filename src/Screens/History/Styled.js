@@ -4,7 +4,8 @@ export default styles = StyleSheet.create({
     BodyHistory: {
         backgroundColor: '#00b16A',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        paddingBottom: 50,
     },
     Card: {
         borderRadius: 10,
