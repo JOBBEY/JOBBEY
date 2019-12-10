@@ -10,7 +10,8 @@ import JobbeyProfile from '../src/Screens/JobbeyProfile/JobbeyProfile';
 import Request from '../src/Screens/Request/Request';
 import History from '../src/Screens/History/History';
 import HistoryJobbey from '../src/Screens/History/HistoryJobbey';
-import Settings from '../src/Screens/Settings/Settings';
+import SettingsUser from '../src/Screens/Settings/SettingsUser';
+import SettingsJobbey from '../src/Screens/Settings/SettingsJobbey';
 
 const routeConfig = {
     Login: {
@@ -49,9 +50,13 @@ const routeConfig = {
         screen: HistoryJobbey,
         path: "HistoryJobbey"
     },
-    Settings:{
-        screen: Settings,
-        path: "Settings"
+    SettingsUser:{
+        screen: SettingsUser,
+        path: "SettingsUser"
+    },
+    SettingsJobbey:{
+        screen: SettingsJobbey,
+        path: "SettingsJobbey"
     },
 };
 const navigatorConfig = {

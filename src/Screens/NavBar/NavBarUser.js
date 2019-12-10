@@ -15,7 +15,7 @@ const Menu = (props) => {
     NavigationService.navigate("History");
   }
   nextScreenSettings =() => {
-    NavigationService.navigate("Settings");
+    NavigationService.navigate("SettingsUser");
   }
   const ICON_SIZE = 30;
   const ICON_COLOR='white';
