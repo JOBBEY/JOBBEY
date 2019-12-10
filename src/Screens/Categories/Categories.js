@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text, TouchableOpacity, ScrollView, Image } from 'react-native'
+import { View, Text, TouchableOpacity, ScrollView } from 'react-native'
 import NavigationService from '../../../Navigation/NavigationService'
 import styles from './Styled'
 import IconButton from './IconButton'
@@ -11,10 +11,11 @@ export default class Categories extends Component {
     }
     render() {
         return (
-            <View style={styles.container}>
-                <ScrollView>
+            <ScrollView style={styles.container}>
+                <View style={styles.container}>
                     <NavigationBar />
-                    <Text style={styles.buttonText2}>
+                    <Text
+                        style={styles.buttonText2}>
                             ¿En qué categoría se encuentra tu solicitud?
                     </Text>
                     <View style={styles.columns}>
@@ -24,22 +25,22 @@ export default class Categories extends Component {
                                 displayText='Computación'
                                 pngImage={require('../../assets/computer.png')} />
                             <IconButton
-                                displayText='   Mecánica    '
+                                displayText='Mecánica'
                                 pngImage={require('../../assets/mechanic.png')}/>
                             <IconButton
-                                displayText='     Legales      '
+                                displayText='Legales'
                                 pngImage={require('../../assets/balance.png')}/>
                         </View>
                         <View
                             style={styles.containerRigth}>
                             <IconButton
-                                displayText='     Plomería    '
+                                displayText='Plomería'
                                 pngImage={require('../../assets/pipeline.png')} />
                             <IconButton
-                                displayText='   Educación   '
+                                displayText='Educación'
                                 pngImage={require('../../assets/education.png')}/>
                             <IconButton
-                                displayText='    Limpieza    '
+                                displayText='Limpieza'
                                 pngImage={require('../../assets/cleaning.png')} />
                         </View>
                     </View>
@@ -48,8 +49,8 @@ export default class Categories extends Component {
                         onPress={this.nextScreen}>
                         <Text style={styles.buttonText}>Categoría no listada</Text>
                     </TouchableOpacity>
-                </ScrollView>
-            </View>
+                </View>
+            </ScrollView>
         )
     }
 }

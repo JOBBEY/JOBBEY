@@ -24,7 +24,7 @@ export default styles = StyleSheet.create({
         backgroundColor: '#28323A',
         paddingVertical: 30,
         paddingHorizontal: 15,
-        //marginVertical: 30,
+        width: 110,
         marginHorizontal: 50,
         marginTop: 30,
         marginBottom: 10,
