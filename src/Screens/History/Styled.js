@@ -6,4 +6,8 @@ export default styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center'
     },
+    Card: {
+        borderRadius: 10,
+        backgroundColor: '#f7f7f8'
+    }
 })
