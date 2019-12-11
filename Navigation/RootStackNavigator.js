@@ -7,11 +7,17 @@ import Categories from '../src/Screens/Categories/Categories';
 import Rate from '../src/Screens/Rate/Rate';
 import UserProfile from '../src/Screens/UserProfile/UserProfile'
 import JobbeyProfile from '../src/Screens/JobbeyProfile/JobbeyProfile'
+import SignUpForm from '../src/Screens/Login/SignUpForm'
 
 const routeConfig = {
     Login: {
         screen: Login,
         path: "Login"
+    },
+    
+    SignUpForm: {
+        screen: SignUpForm,
+        path: "SignUpForm"
     },
     SelectRol:{
         screen: SelectRol,

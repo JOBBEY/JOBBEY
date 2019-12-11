@@ -35,6 +35,10 @@ export default class LoginForm extends Component{
         NavigationService.navigate("SelectRol");
     }
 
+    signUpScreen =() =>{
+        NavigationService.navigate("SignUpForm");
+    }
+
     
     _configureGoogleSignIn() {
         GoogleSignin.configure({
@@ -67,16 +71,7 @@ export default class LoginForm extends Component{
           }
         }
       };
-    onRegister = () =>{
-        firebase.auth().createUserWithEmailAndPassword(this.state.typedEmail, this.state.typedPassword)
-        .then( ( loggedInUser ) => {
-            this.setState({user: loggedInUser})
-            console.log('Register with user: ${JSON.stringify( loggedInUser.toJSON() )}');
-            NavigationService.navigate("SelectRol");
-        }).catch( (error) => {
-            console.log('Reegister fail with error: ${error}');
-        })
-    }
+    
 
     onLogin = () =>{
         firebase.auth().signInWithEmailAndPassword(this.state.typedEmail, this.state.typedPassword)
@@ -111,7 +106,7 @@ export default class LoginForm extends Component{
             <View style={styles.containerForm}>
                 <TextInput
                     style={styles.input}
-                    placeholder='Usuario o email'
+                    placeholder='Correo electrónico'
                     returnKeyType='next'
                     keyboardType='email-address'
                     autoCapitalize='none'
@@ -121,8 +116,7 @@ export default class LoginForm extends Component{
                             this.setState( {typedEmail: text} );
                         }
                     }
-                    onSubmitEditing={() => this.passwordInput.focus()}
-                />
+                    onSubmitEditing={() => this.passwordInput.focus()}/>
                 <TextInput
                     style={styles.input}
                     placeholder='Contraseña'
@@ -133,40 +127,22 @@ export default class LoginForm extends Component{
                             this.setState( {typedPassword: text} );
                         }
                     }
-                    ref={(input) => this.passwordInput = input}
-                />
-                <Text>
-                    {this.state.isAuthenticated == true? 'Logged in Anonymous':'' }
-                </Text>
+                    ref={(input) => this.passwordInput = input}/>
                 <View>
-                <TouchableOpacity
-                    style={styles.buttonContainer}
-                    onPress={this.onRegister}>
-                    <Text style={styles.buttonText}>Register</Text>
-                </TouchableOpacity>
+                    <TouchableOpacity
+                        style={styles.buttonContainer}
+                        onPress={this.onLogin}>
+                        <Text style={styles.buttonText}>Login</Text>
+                    </TouchableOpacity>
+                   
                 </View>
-                <Text>
-
+               
+                <Text> ¿No estás registrado? 
+                    <Text
+                        onPress={this.signUpScreen}
+                        style={styles.title}> 
+                    Registrate </Text>
                 </Text>
-                <View>
-            <TouchableOpacity
-                style={styles.buttonContainer}
-                onPress={this.onLogin}>
-                <Text style={styles.buttonText}>Login</Text>
-            </TouchableOpacity>
-            <GoogleSigninButton
-                style={{width: 48, height: 48}}
-                size={GoogleSigninButton.Size.Icon}
-                color={GoogleSigninButton.Color.Dark}
-                onPress={this._signIn}>
-
-            </GoogleSigninButton>
-            <TouchableOpacity
-                style={styles.buttonContainer}
-                onPress={this.onLoginGoogle}>
-                <Text style={styles.buttonText}>Login Google</Text>
-            </TouchableOpacity>
-            </View>
             </View>
            
         )
