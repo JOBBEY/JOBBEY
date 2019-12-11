@@ -36,10 +36,5 @@ export default styles = StyleSheet.create({
         textAlign: 'center',
         color: '#f7f7f8',
         fontWeight: '700',
-        marginEnd: '2%',
-    },
-    noAcount: {
-        flexDirection: 'row',
-        marginVertical: 20,
     }
 })
