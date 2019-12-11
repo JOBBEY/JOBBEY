@@ -12,11 +12,16 @@ import History from '../src/Screens/History/History';
 import HistoryJobbey from '../src/Screens/History/HistoryJobbey';
 import SettingsUser from '../src/Screens/Settings/SettingsUser';
 import SettingsJobbey from '../src/Screens/Settings/SettingsJobbey';
+import Register from '../src/Screens/Register/Register';
 
 const routeConfig = {
     Login: {
         screen: Login,
         path: "Login"
+    },
+    Register: {
+        screen: Register,
+        path: "Register"
     },
     SelectRol:{
         screen: SelectRol,
