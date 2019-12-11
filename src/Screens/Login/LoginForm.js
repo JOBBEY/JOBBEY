@@ -4,8 +4,11 @@ import NavigationService from '../../../Navigation/NavigationService'
 import styles from './Styled'
 
 export default class LoginForm extends Component{
-    nextScreen = () => {
-        NavigationService.navigate("SelectRol");
+    nextScreenLogIn = () => {
+      NavigationService.navigate("SelectRol");
+    }
+    nextScreenRegister = () => {
+      NavigationService.navigate("Register");
     }
     render(){
         return(
@@ -30,9 +33,18 @@ export default class LoginForm extends Component{
                 />
                 <TouchableOpacity
                     style={styles.buttonContainer}
-                    onPress={this.nextScreen}>
+                    onPress={this.nextScreenLogIn}>
                     <Text style={styles.buttonText}>Ingresar</Text>
                 </TouchableOpacity>
+                <View style={styles.noAcount}>
+                    <Text style={styles.buttonText}>
+                        ¿No tienes cuenta?
+                    </Text>
+                    <TouchableOpacity
+                        onPress={this.nextScreenRegister}>
+                        <Text style={styles.buttonText}>¡Registrate!</Text>
+                    </TouchableOpacity>
+                </View>
             </View>
         )
     }

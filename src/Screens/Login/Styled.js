@@ -30,10 +30,16 @@ export default styles = StyleSheet.create({
         backgroundColor: '#28323A',
         paddingVertical: 15,
         borderRadius: 20,
+        marginVertical: 10,
     },
     buttonText: {
         textAlign: 'center',
         color: '#f7f7f8',
         fontWeight: '700',
+        marginEnd: '2%',
+    },
+    noAcount: {
+        flexDirection: 'row',
+        marginVertical: 20,
     }
 })
