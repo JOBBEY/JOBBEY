@@ -5,7 +5,7 @@ import styles from './Styled'
 
 export default class IconButton extends Component {
     nextScreen = () => {
-        NavigationService.navigate("Rate");
+        NavigationService.navigate("RequestForm");
     }
     render() {
         return (

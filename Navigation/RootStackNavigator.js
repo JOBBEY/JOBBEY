@@ -8,6 +8,7 @@ import Rate from '../src/Screens/Rate/Rate';
 import UserProfile from '../src/Screens/UserProfile/UserProfile';
 import JobbeyProfile from '../src/Screens/JobbeyProfile/JobbeyProfile';
 import Request from '../src/Screens/Request/Request';
+import RequestForm from '../src/Screens/Request/RequestForm';
 import History from '../src/Screens/History/History';
 import HistoryJobbey from '../src/Screens/History/HistoryJobbey';
 import SettingsUser from '../src/Screens/Settings/SettingsUser';
@@ -46,6 +47,10 @@ const routeConfig = {
     Request:{
         screen: Request,
         path: "Request"
+    },
+    RequestForm:{
+        screen: RequestForm,
+        path: "RequestForm"
     },
     History:{
         screen: History,

@@ -27,6 +27,27 @@ export default styles = StyleSheet.create({
     padding: 10,
     flex: 3,
   },
+
+  ButtonFormContainer: {
+    backgroundColor: '#28323A',
+    paddingVertical: 15,
+    borderRadius: 20,
+  },
+  containerPlus:{
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  ButtonPlus: {
+    height: 40,
+    width: 40,
+    marginVertical: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#f7f7f8',
+    paddingVertical: 15,
+    borderRadius: 100,
+  },
   ButtonContainer: {
     backgroundColor: '#28323A',
     paddingVertical: 15,
@@ -77,5 +98,49 @@ export default styles = StyleSheet.create({
     fontSize: 15,
     fontWeight: '700',
     marginBottom: 15
+  },
+  container: {
+    flex: 1,
+    backgroundColor: '#00b16A',
+  },
+  containerForm: {
+    flex: 1,
+    backgroundColor: '#00b16A',
+    padding: 10,
+  },
+  Text2: {
+    textAlign: 'center',
+    color: '#f7f7f8',
+    fontWeight: '700',
+    marginTop: 30,
+    marginBottom:30,
+    fontSize: 20
+},
+  input: {
+    height: 40,
+    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+    marginBottom: 20,
+    paddingHorizontal: 10,
+    color: '#28323A',
+    borderRadius: 40,
+  },
+  inputDescription: {
+    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+    marginBottom: 20,
+    paddingHorizontal: 10,
+    color: '#28323A',
+    borderRadius: 1,
+    justifyContent: 'flex-start',
+    height: 150,
+    borderRadius: 20,
+  },
+  inputTextPlus: {
+    height: 60,
+    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+    marginTop:10,
+    marginBottom: 10,
+    paddingHorizontal: 10,
+    color: '#28323A',
+    borderRadius: 20
   },
 });

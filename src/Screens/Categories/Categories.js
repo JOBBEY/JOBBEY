@@ -7,7 +7,7 @@ import NavigationBar from '../NavBar/NavBarUser';
 
 export default class Categories extends Component {
     nextScreen = () => {
-        NavigationService.navigate("Rate");
+        NavigationService.navigate("RequestForm");
     }
     render() {
         return (
