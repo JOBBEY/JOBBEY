@@ -16,6 +16,10 @@ export default class LoginForm extends Component{
         password : ''
     }
     loginRequest = async () => {
+        if (this.state.email == '' || this.state.password == ''){
+            Snackbar.show({ title: 'Por favor verifica los campos' })
+            return
+        }
         try {
             let response = await fetch(
                 `https://us-central1-jobbeyback.cloudfunctions.net/loginUser?email=${this.state.email}&password=${this.state.password}`,

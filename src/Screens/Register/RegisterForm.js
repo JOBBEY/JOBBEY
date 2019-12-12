@@ -15,6 +15,9 @@ export default class RegisterForm extends Component{
         if (this.state.password != this.state.password2){
             Snackbar.show({title: 'Las contraseñas no coinciden'})
             return
+        } else if (this.state.name == '' || this.state.email == '' || this.state.password == '' || this.state.password2 == ''){
+            Snackbar.show({ title: 'Por favor verifica los campos' })
+            return
         }
         try {
             let response = await fetch(
