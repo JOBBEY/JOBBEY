@@ -24,8 +24,8 @@ const Request = (props) => {
         />
         <RequestCard
           tasks={['Redactar derecho de petición', 'Asesoría ante tutela']}
-          name="Jhon Snow"
-          score="4.02"
+          name="Daniel Escobar"
+          score="4.99"
           requestType="Asesoría Jurídica"
           money="40.000"
         />

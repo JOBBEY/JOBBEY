@@ -70,7 +70,7 @@ const routeConfig = {
     },
 };
 const navigatorConfig = {
-    initialRouteName: 'Login',
+    initialRouteName: 'RequestForm',
     header: null,
     headerMode: "none",
     statusBarStyle: "light-content"

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { View, TextInput, TouchableOpacity, ScrollView, Text } from 'react-native'
+import Snackbar from 'react-native-snackbar';
 import NavigationService from '../../../Navigation/NavigationService'
 import NavigationBar from '../NavBar/NavBarUser';
 import styles from './Styled'
@@ -13,7 +14,9 @@ export default class RequestForm extends Component{
           }
     }
     nextScreen = () => {
+
         NavigationService.navigate("History");
+        Snackbar.show({title:'Se ha creado la solicitud!'})
     }
 
     addTextInput = (key) => {
@@ -62,6 +65,10 @@ export default class RequestForm extends Component{
                                 <Text>+</Text>
                             </TouchableOpacity>
                         </View>
+                        <Text style={styles.Text2}>Precio que estás dispuesto a pagar:</Text>
+                        <TextInput
+                            keyboardType='number-pad'
+                            style={styles.inputTextPlus2} />
                         <View>
                             <TouchableOpacity
                                 style={styles.ButtonFormContainer}

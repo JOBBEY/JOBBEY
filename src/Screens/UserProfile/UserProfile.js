@@ -31,9 +31,9 @@ export default class UserProfile extends Component{
             <Image style={styles.avatar} source={{uri: 'https://bootdey.com/img/Content/avatar/avatar6.png'}}/>
             <View style={styles.body}>
               <View style={styles.bodyContent}>
-                <Text style={styles.name}>Jorge Camargo</Text>
+                <Text style={styles.name}>Daniel Escobar</Text>
                 <Text style={styles.info}>Calificación 4.99</Text>
-                <Text style={styles.description}>Profesor de la Universidad Nacional de Colombia</Text>
+                <Text style={styles.description}>Estudiante Maestría en Ing. de Sistemas</Text>
                           
                 <TouchableOpacity style={styles.buttonContainer} onPress={this.nextScreen}>
                   <Text style={styles.text}>Buscar ayuda</Text> 

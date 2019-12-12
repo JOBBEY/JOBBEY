@@ -1,9 +1,15 @@
 import React, {Component} from 'react';
 import {Card} from 'react-native-shadow-cards';
 import { TouchableOpacity , View, Text, Image} from 'react-native';
+import NavigationService from '../../../Navigation/NavigationService'
+import Snackbar from 'react-native-snackbar';
 import styles from './Styled';
 
 export default class RequestCard extends Component {
+  acceptRequest = () => {
+    Snackbar.show({title:"Se ha enviado la notificación al usuario"})
+    NavigationService.navigate("SelectRol");
+  }
   render() {
     const tasks = this.props.tasks.map(function(task, i) {
         return <Text style={styles.NameText} key={i}>{task}</Text>;
@@ -41,7 +47,7 @@ export default class RequestCard extends Component {
           <View style={styles.FlexView}>
             <TouchableOpacity
               style={styles.ButtonContainer}
-              onPress={this.nextScreen}>
+              onPress={this.acceptRequest}>
               <Text style={styles.ButtonText}>Aceptar</Text>
             </TouchableOpacity>
             <TouchableOpacity

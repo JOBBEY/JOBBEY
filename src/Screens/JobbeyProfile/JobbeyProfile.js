@@ -32,9 +32,9 @@ export default class UserProfile extends Component{
                   <Image style={styles.avatar} source={{uri: 'https://bootdey.com/img/Content/avatar/avatar6.png'}}/>
                   <View style={styles.body}>
                     <View style={styles.bodyContent}>
-                      <Text style={styles.name}>Christian Sanabria</Text>
+                      <Text style={styles.name}>Daniel Escobar</Text>
                       <Text style={styles.info}>Calificación 4.99</Text>
-                      <Text style={styles.description}>Violinista profecional, no solo se dan clases, se reparan violines a precios economicos</Text>            
+                      <Text style={styles.description}>Estudio Ingeniería de sistemas, sé arreglar computadores, etc. Soy muy económico.</Text>            
                       <TouchableOpacity 
                         style={styles.buttonContainer} 
                         onPress={this.nextScreenRequest}

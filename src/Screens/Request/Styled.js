@@ -32,6 +32,7 @@ export default styles = StyleSheet.create({
     backgroundColor: '#28323A',
     paddingVertical: 15,
     borderRadius: 20,
+    marginVertical: 20
   },
   containerPlus:{
     flexDirection: 'row',
@@ -142,5 +143,16 @@ export default styles = StyleSheet.create({
     paddingHorizontal: 10,
     color: '#28323A',
     borderRadius: 20
+  },
+  inputTextPlus2: {
+    height: 60,
+    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+    marginTop: 10,
+    marginBottom: 10,
+    paddingHorizontal: 10,
+    color: '#28323A',
+    borderRadius: 20,
+    fontSize: 40,
+    textAlign:"center"
   },
 });

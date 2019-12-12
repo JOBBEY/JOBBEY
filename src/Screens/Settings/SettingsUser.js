@@ -4,8 +4,16 @@ import NavigationBar from '../NavBar/NavBarUser';
 import styles from './Styled';
 import SwitchSpace from './SwitchSpace';
 import Icon from 'react-native-vector-icons/Ionicons';
+import Snackbar from 'react-native-snackbar';
+import NavigationService from '../../../Navigation/NavigationService'
 
 export default class Settings extends React.Component {
+  saveChanges = () => {
+    Snackbar.show({title:"Se han guardado los cambios!"})
+  }
+  selectRole = () => {
+      NavigationService.navigate("SelectRol");
+  }
   render(){
     const ICON_SIZE = 20;
     const ICON_COLOR = '#28323A';
@@ -15,7 +23,7 @@ export default class Settings extends React.Component {
             <ScrollView>
                 <View style={styles.container}>
                     <View style={styles.contName}>
-                        <Text style={styles.name}>Jorge Camargo</Text>
+                        <Text style={styles.name}>Daniel Escobar</Text>
                         <View style={styles.icName}>
                             <Icon name="md-create" size={ICON_SIZE} color={ICON_COLOR} />
                         </View>
@@ -46,9 +54,14 @@ export default class Settings extends React.Component {
                     </TouchableOpacity>
                     <TouchableOpacity
                         style={styles.buttonContainer}
-                        //onPress={this.nextScreen}
+                        onPress={this.saveChanges}
                         >
                         <Text style={styles.buttonText}>Guardar cambios</Text>
+                    </TouchableOpacity><TouchableOpacity
+                        style={styles.buttonContainer}
+                        onPress={this.selectRole}
+                    >
+                        <Text style={styles.buttonText}>Cambiar rol</Text>
                     </TouchableOpacity>
                 </View>
             </ScrollView>

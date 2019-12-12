@@ -11,14 +11,19 @@ const History = (props) => {
       <NavigationBar />
       <ScrollView>
         <HistoryCard
-          title='Afinación de violin'
+          title='Instalar Windows'
           price='70.000'
-          info={['Limpieza de cerdas de caballo', 'Afinación de cuerdas']}
+          info={['Formatear PC', 'Instalar Sistema Operativo']}
           name='Eduardo Herrera' />
         <HistoryCard
-          title='Clases de violín'
+          title='Reparar PC'
           price='40.000'
-          info={['¿Cómo leer partituras?', 'Tocar las notas en el violín']}
+          info={['Mi PC no enciende', 'Revisar cargador']}
+          name='Jorge Camargo' />
+        <HistoryCard
+          title='Asesoría para comprar un nuevo PC'
+          price='50.000'
+          info={['Asesorar para la compra', 'Ir al centro de compra']}
           name='Jorge Camargo' />
       </ScrollView>
     </View>
