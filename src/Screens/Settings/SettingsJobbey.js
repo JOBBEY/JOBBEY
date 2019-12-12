@@ -16,7 +16,7 @@ export default class Settings extends React.Component {
                 <ScrollView>
                     <View style={styles.container}>
                         <View style={styles.contName}>
-                            <Text style={styles.name}>Christian Sanabria</Text>
+                            <Text style={styles.name}>Daniel Escobar</Text>
                             <View style={styles.icName}>
                                 <Icon name="md-create" size={ICON_SIZE} color={ICON_COLOR} />
                             </View>
